@@ -116,6 +116,7 @@ class ConfigurationPage(ttk.Frame):
         if tooltip is not None:
             ui_utils.create_tooltip(checkbox, tooltip)
     
+    # method for adding a combobox in settings
     def add_combobox(self, option_name, values, row=None, column=0, pady=0, columnspan=1):
         variable = get_workbench().get_variable(option_name)
         combobox = ttk.Combobox(
