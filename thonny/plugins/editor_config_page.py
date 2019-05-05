@@ -65,7 +65,9 @@ class EditorConfigurationPage(ConfigurationPage):
         self._ffnewf = get_workbench().get_variable(
             "view.fileformat_newfile"
         )
-        #self._ffnewf = "Platform default"
+        print(self._ffnewf)
+        print(dir(self._ffnewf))
+        #print(__class__(self._ffnewf)))
         self._fileformat_combo = ttk.Combobox(
             self,
             width=18,

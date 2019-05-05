@@ -478,7 +478,7 @@ class EditorNotebook(ui_utils.ClosableNotebook):
         get_workbench().set_default("view.highlight_current_line", False)
         get_workbench().set_default("view.show_line_numbers", True)
         get_workbench().set_default("view.recommended_line_length", 0)
-        get_workbench().set_default("view.fileformat_newfile", "Platform default")
+        get_workbench().set_default("view.fileformat_newfile", "Windows (CF+LF)")
 
         self._recent_menu = tk.Menu(
             get_workbench().get_menu("file"), postcommand=self._update_recent_menu
