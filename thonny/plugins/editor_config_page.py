@@ -62,12 +62,10 @@ class EditorConfigurationPage(ConfigurationPage):
 
         ttk.Label(self, text=_("Fileformat for new files")).grid(row=22, column=0, sticky=tk.W, padx=(0, 10), pady=(10, 0))
         # TODO : a config variable
-        """
         self._ffnewf = get_workbench().get_variable(
             "view.fileformat_newfile"
         )
-        """
-        self._ffnewf = "Platform default"
+        #self._ffnewf = "Platform default"
         self._fileformat_combo = ttk.Combobox(
             self,
             width=18,
